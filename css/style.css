@@ -1,0 +1,367 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+h1,h2,h3,h4,h6{
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  color: black;
+  margin-top: 1rem;
+}
+
+p{
+  font-size: 1.25rem;
+  color: #000;
+  max-width: 500px;
+}
+
+
+/* Navigation */
+
+.form-control {
+  padding: .375rem .99rem;
+  min-width: 150px;
+}
+
+nav.r-nav{
+	background: transparent;
+	padding: 15px 0;
+  transition: top 0.5s;
+}
+
+nav .navbar-brand{
+  font-family: acumin-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+	font-size: 1.700rem;
+	color: #000;
+}
+
+nav .navbar-nav li a{
+ color: rgba(0, 0, 0, 0) !important;
+ font-size: 1rem;
+ letter-spacing: 0.05em;
+ font-family: poppins, sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+nav .navbar-nav li{
+	margin-left: 15px;
+}
+
+nav.stickyadd .navbar-brand{
+  color: #000;
+  font-size: 2.5rem;
+  transition: .5s all ease-in-out;
+}
+
+nav .navbar-nav .nav-link {
+  color: black !important;
+}
+
+.navbar .hamburger{
+color: #000;
+}
+
+nav.stickyadd .hamburger{
+  color: #000;
+}
+
+/* Header */
+
+header{
+    background: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)) , url(../images/main_back.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.header-content{
+  height: 105vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.content-box{
+  max-width: 700px;
+  color: #000;
+}
+
+.content-box h4{
+font-size: 1.875rem;
+}
+
+.content-box h1{
+  font-size: 3.25rem;
+  text-align: left;
+}
+
+.content-box a{
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 5px 25px;
+}
+
+.content-box a:hover{
+  color: #000;
+  background-color: #fff;
+  transition: 0.5s all; 
+}
+
+
+.browntxt{
+  color: #392213;
+}
+
+/* About Me */
+
+.about{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+}
+
+.about li a{
+  color: #000;
+  display: inline-block;
+  height: 42px;
+  width: 42px;
+  font-size: 20px;
+  border: 2px solid #d4d4d4;
+  border-radius: 50%;
+  line-height: 40px;
+  transition: 0.5s all;
+  text-align: center;
+}
+
+.about li a:hover{
+  color: #EE8683;
+  border: 2px solid #EE8683;
+}
+
+.portfolio{
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+h5{
+ font-size: 1.2rem;
+ font-family: 'Nunito', sans-serif;
+}
+
+
+/*search box css start here*/
+.search-sec{
+    padding: 0.875rem;
+}
+
+.search-slt{
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #55595c;
+    background-color: #fff;
+    background-image: none;
+    border: 0.5px solid #ccc;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+}
+
+
+.titel{
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+img:hover {opacity: 0.7;}
+
+/* Style the Image Used to Trigger the Modal */
+img {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+img:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+#image-viewer {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+.modal-content { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+#image-viewer .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+#image-viewer .close:hover,
+#image-viewer .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Youtube videos */
+
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.btn{
+  margin-top: 0.9375rem;
+  background-color: #392213;
+  border-color: #392213;
+}
+
+.contact{
+ margin-bottom: 2.5rem;
+}
+
+/* Footer */
+
+.footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 25px;
+  background: rgba(211,211,211, 0.3);
+  text-align: center;
+}
+
+
+/* carousel animation of slogan */
+.carousel{
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  font-size: 3.2rem;
+}
+
+.word {
+  position: absolute;
+  width: 220px;
+  opacity: 0;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  float: left;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wisteria {
+  color: #392213;
+}
+
+.belize {
+  color: black;
+}
+
+.pomegranate {
+  color: #B37A4C
+}
+
+.green {
+  color: #9C6137
+}
+
+
+/* Mediaquery */
+@supports (-webkit-touch-callout: none) {
+  header{
+    background: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)) , url(../images/main_back.jpg) no-repeat center center;
+}
+}
+
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+
+    .navbar-brand{
+      margin-left: 15px;
+    }
+
+#navbarId{
+  background-color: white;
+}
+
+}
+
+
